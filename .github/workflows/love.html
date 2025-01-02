@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: white;
+            background: url('/mnt/data/Messenger_creation_AED06A63-3637-42A0-BF1F-CB2C66082CD7.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 50px;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for readability */
+            z-index: -1;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff6b6b;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.2s;
+            display: inline-block;
+            margin-top: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        a:hover {
+            background-color: #e63946;
+            transform: translateY(-3px);
+        }
+        #cat-link {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Loove, Soorry</h1>
+        <p>Pindota palihog love (please?):</p>
+        <a id="apology-link" href="#" onclick="showCatLink()">Love, Sorry 😔</a>
+        <p id="cat-text" style="display: none;">Love, Please pasayloa nko please, pindota ni palihog:</p>
+        <a id="cat-link" href="https://vt.tiktok.com/ZS6Dp747U/" target="_blank">Loveyy, please 🐾</a>
+    </div>
+
+    <script>
+        function showCatLink() {
+            const catLink = document.getElementById('cat-link');
+            const catText = document.getElementById('cat-text');
+            catLink.style.display = 'inline-block';
+            catText.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
